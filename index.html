@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <button id="sMenuButtonOpen">Меню</button>
+    <div class="s-overlay"></div>
+    <nav class="s-menu">
+        <ul class="s-menu__tab-list" id="sMenuTabList">
+            <li class="s-menu__tab-item main-menu active">
+                <a class="s-menu__tab-link" data-block="sTabMainMenu">Main Navigation</a>
+            </li>
+            <li class="s-menu__tab-item search">
+                <a class="s-menu__tab-link" data-block="sTabSearch">Search</a>
+            </li>
+            <li class="s-menu__tab-item resources">
+                <a class="s-menu__tab-link" data-block="sTabResources">Tools &amp; Resources</a>
+            </li>
+            <li class="s-menu__tab-item atoz">
+                <a class="s-menu__tab-link" data-block="sTabAtoz">A-Z Index</a>
+            </li>
+        </ul>
+        <div class="s-menu__container">
+            <button class="s-menu__top-close" id="sMenuButtonClose">Close</button>
+            <div class="s-menu__tab-content active" id="sTabMainMenu">
+                <div class="s-menu__top">
+                    <span class="s-menu__top-title">Main Menu</span>
+                </div>
+                <div class="s-menu__search">
+                    <div class="s-menu__search-inner">
+                        <input class="s-menu__search-input" type="text" placeholder="Search" spellcheck="false">
+                        <button class="s-menu__search-button">Search</button>
+                    </div>
+                </div>
+                <ul class="s-menu__acc-wrapper" id="s-menu__acc-group">
+                    <li class="s-menu__acc">
+                        <div class="s-menu__acc-top">
+                            <a class="s-menu__acc-link" href="">About</a>
+                            <button type="button" class="s-menu__acc-expand_btn">Expand About</button>
+                        </div>
+                        <div class="s-menu__acc-content" tabindex="-1">
+                            <ul class="s-menu__acc-sublist">
+                                <li><a class="s-menu__acc-sublink" href="">University Profile</a></li>
+                                <li><a class="s-menu__acc-sublink" href="">President and Leadership</a></li>
+                                <li><a class="s-menu__acc-sublink" href="">Mission and Vision</a></li>
+                                <li><a class="s-menu__acc-sublink" href="">History and Traditions</a></li>
+                                <li><a class="s-menu__acc-sublink" href="">Rankings and Accolades</a></li>
+                                <li><a class="s-menu__acc-sublink" href="">Our Loyola Community</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="s-menu__acc">
+                        <div class="s-menu__acc-top">
+                            <a class="s-menu__acc-link" href="">Admission &amp; Aid</a>
+                            <button type="button" class="s-menu__acc-expand_btn">Expand Admission &amp; Aid</button>
+                        </div>
+                        <div class="s-menu__acc-content">
+                            <ul class="s-menu__acc-sublist">
+                                <li><a class="s-menu__acc-sublink" href="">Undergraduate Admission</a></li>
+                                <li><a class="s-menu__acc-sublink" href="">Graduate Admission</a></li>
+                                <li><a class="s-menu__acc-sublink" href="">Value of a Loyola Degree</a></li>
+                                <li><a class="s-menu__acc-sublink" href="">Financial Aid</a></li>
+                                <li><a class="s-menu__acc-sublink" href="">Visit and Tours</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="s-menu__acc">
+                        <div class="s-menu__acc-top">
+                            <a class="s-menu__acc-link" href="">Academics</a>
+                            <button type="button" class="s-menu__acc-expand_btn">Expand Academics</button>
+                        </div>
+                        <div class="s-menu__acc-content">
+                            <ul class="s-menu__acc-sublist">
+                                <li><a class="s-menu__acc-sublink" href="">Undergraduate</a></li>
+                                <li><a class="s-menu__acc-sublink" href="">Graduate</a></li>
+                                <li><a class="s-menu__acc-sublink" href="">Continuing Education</a></li>
+                                <li><a class="s-menu__acc-sublink" href="">Summer Sessions</a></li>
+                                <li><a class="s-menu__acc-sublink" href="">Majors and Degrees</a></li>
+                                <li><a class="s-menu__acc-sublink" href="">Academic Advising and Support</a></li>
+                                <li><a class="s-menu__acc-sublink" href="">Catalogue</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="s-menu__acc">
+                        <div class="s-menu__acc-top">
+                            <a class="s-menu__acc-link" href="">Schools</a>
+                            <button type="button" class="s-menu__acc-expand_btn">Expand Schools</button>
+                        </div>
+                        <div class="s-menu__acc-content">
+                            <ul class="s-menu__acc-sublist">
+                                <li><a class="s-menu__acc-sublink" href="">Loyola College of Arts and Sciences</a></li>
+                                <li><a class="s-menu__acc-sublink" href="">Sellinger School of Business and Management</a>
+                                </li>
+                                <li><a class="s-menu__acc-sublink" href="">School of Education</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="s-menu__acc">
+                        <div class="s-menu__acc-top">
+                            <a class="s-menu__acc-link" href="">Campus Life</a>
+                            <button type="button" class="s-menu__acc-expand_btn">Expand Campus Life</button>
+                        </div>
+                        <div class="s-menu__acc-content">
+                            <ul class="s-menu__acc-sublist">
+                                <li><a class="s-menu__acc-sublink" href="">Housing and Dining</a></li>
+                                <li><a class="s-menu__acc-sublink" href="">Clubs and Organizations</a></li>
+                                <li><a class="s-menu__acc-sublink" href="">Service and Social Justice</a></li>
+                                <li><a class="s-menu__acc-sublink" href="">Religious and Spiritual Life</a></li>
+                                <li><a class="s-menu__acc-sublink" href="">Fitness and Activities</a></li>
+                                <li><a class="s-menu__acc-sublink" href="">Around Baltimore</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="s-menu__ctas-list">
+                    <li class="s-menu__ctas-item"><a href="">Visit</a></li>
+                    <li class="s-menu__ctas-item"><a href="">Request Info</a></li>
+                    <li class="s-menu__ctas-item"><a href="">Apply</a></li>
+                </ul>
+                <a href="" class="s-menu__logo-link">Greyhounds Athletics</a>
+                <ul class="s-menu__list">
+                    <li><a class="s-menu__list-link" href="">Contact the University</a></li>
+                    <li><a class="s-menu__list-link" href="">Directions and Parking</a></li>
+                    <li><a class="s-menu__list-link" href="">Calendars</a></li>
+                    <li><a class="s-menu__list-link" href="">Support Loyola by making a gift</a></li>
+                    <li><a class="s-menu__list-link" href="">Work at Loyola</a></li>
+                    <li><a class="s-menu__list-link" href="">Current Students</a></li>
+                    <li><a class="s-menu__list-link" href="">Faculty and Staff</a></li>
+                    <li><a class="s-menu__list-link" href="">Alumni</a></li>
+                    <li><a class="s-menu__list-link" href="">Parents</a></li>
+                </ul>
+            </div>
+            <div class="s-menu__tab-content" id="sTabSearch">
+                <div class="s-menu__top">
+                    <span class="s-menu__top-title">Search</span>
+                </div>
+                <div class="s-menu__search">
+                    <div class="s-menu__search-inner">
+                        <input class="s-menu__search-input" type="text" placeholder="Search" spellcheck="false">
+                        <button class="s-menu__search-button">Search</button>
+                    </div>
+                </div>
+                <span class="s-menu__heading">Common Search Terms</span>
+                <ul class="s-menu__list">
+                    <li><a class="s-menu__list-link" href="">Contact the University</a></li>
+                    <li><a class="s-menu__list-link" href="">Directions and Parking</a></li>
+                    <li><a class="s-menu__list-link" href="">Calendars</a></li>
+                    <li><a class="s-menu__list-link" href="">Support Loyola by making a gift</a></li>
+                    <li><a class="s-menu__list-link" href="">Work at Loyola</a></li>
+                    <li><a class="s-menu__list-link" href="">Current Students</a></li>
+                    <li><a class="s-menu__list-link" href="">Faculty and Staff</a></li>
+                    <li><a class="s-menu__list-link" href="">Alumni</a></li>
+                    <li><a class="s-menu__list-link" href="">Parents</a></li>
+                </ul>
+            </div>
+            <div class="s-menu__tab-content" id="sTabResources">
+                <div class="s-menu__top">
+                    <span class="s-menu__top-title">TOOLS & RESOURCES</span>
+                </div>
+                <ul class="s-menu__resource-list">
+                    <li class="s-menu__resource-item">
+                        <a class="s-menu__resources-link" href="">
+                            <img class="s-menu__resources-img" src="image/i-1-bookstore.svg" alt="">
+                            Bookstore
+                        </a>
+                    </li>
+                    <li class="s-menu__resource-item">
+                        <a class="s-menu__resources-link" href="">
+                            <img class="s-menu__resources-img" src="image/i-2-calendar.svg" alt="">
+                            Calendars
+                        </a>
+                    </li>
+                    <li class="s-menu__resource-item">
+                        <a class="s-menu__resources-link" href="">
+                            <img class="s-menu__resources-img" src="image/i-3-shuttle.svg" alt="">
+                            Campus Shuttle
+                        </a>
+                    </li>
+                    <li class="s-menu__resource-item">
+                        <a class="s-menu__resources-link" href="">
+                            <img class="s-menu__resources-img" src="image/i-4-email.svg" alt="">
+                            Email
+                        </a>
+                    </li>
+                    <li class="s-menu__resource-item">
+                        <a class="s-menu__resources-link" href="">
+                            <img class="s-menu__resources-img" src="image/i-5-inside.svg" alt="">
+                            Inside Loyola
+                        </a>
+                    </li>
+                    <li class="s-menu__resource-item">
+                        <a class="s-menu__resources-link" href="">
+                            <img class="s-menu__resources-img" src="image/i-6-library.svg" alt="">
+                            Library
+                        </a>
+                    </li>
+                    <li class="s-menu__resource-item">
+                        <a class="s-menu__resources-link" href="">
+                            <img class="s-menu__resources-img" src="image/i-7-today.svg" alt="">
+                            Loyola Today
+                        </a>
+                    </li>
+                    <li class="s-menu__resource-item">
+                        <a class="s-menu__resources-link" href="">
+                            <img class="s-menu__resources-img" src="image/i-8-maps.svg" alt="">
+                            Maps &amp; Directions
+                        </a>
+                    </li>
+                    <li class="s-menu__resource-item">
+                        <a class="s-menu__resources-link" href="">
+                            <img class="s-menu__resources-img" src="image/i-9-moodle.svg" alt="">
+                            Moodle
+                        </a>
+                    </li>
+                    <li class="s-menu__resource-item">
+                        <a class="s-menu__resources-link" href="">
+                            <img class="s-menu__resources-img" src="image/i-10-office365.svg" alt="">
+                            Office 365
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="s-menu__tab-content" id="sTabAtoz">
+                <div class="s-menu__top">
+                    <span class="s-menu__top-title">A-Z INDEX</span>
+                </div>
+                <div class="s-menu__search">
+                    <div class="s-menu__search-inner">
+                        <input class="s-menu__search-input s-menu__search-input--filter" type="text" placeholder="Type to filter" spellcheck="false">
+                        <button class="s-menu__search-button">Search</button>
+                    </div>
+                </div>
+                <ul class="s-menu__list">
+                    <li><a class="s-menu__list-link" href="">Item</a></li>
+                    <li><a class="s-menu__list-link" href="">Item</a></li>
+                    <li><a class="s-menu__list-link" href="">Item</a></li>
+                    <li><a class="s-menu__list-link" href="">Item</a></li>
+                    <li><a class="s-menu__list-link" href="">Item</a></li>
+                    <li><a class="s-menu__list-link" href="">Item</a></li>
+                    <li><a class="s-menu__list-link" href="">Item</a></li>
+                    <li><a class="s-menu__list-link" href="">Item</a></li>
+                    <li><a class="s-menu__list-link" href="">Item</a></li>
+                    <li><a class="s-menu__list-link" href="">Item</a></li>
+                    <li><a class="s-menu__list-link" href="">Item</a></li>
+                    <li><a class="s-menu__list-link" href="">Item</a></li>
+                    <li><a class="s-menu__list-link" href="">Item</a></li>
+                    <li><a class="s-menu__list-link" href="">Item</a></li>
+                    <li><a class="s-menu__list-link" href="">Item</a></li>
+                    <li><a class="s-menu__list-link" href="">Item</a></li>
+                    <li><a class="s-menu__list-link" href="">Item</a></li>
+                    <li><a class="s-menu__list-link" href="">Item</a></li>
+                    <li><a class="s-menu__list-link" href="">Item</a></li>
+                    <li><a class="s-menu__list-link" href="">Item</a></li>
+                    <li><a class="s-menu__list-link" href="">Item</a></li>
+                    <li><a class="s-menu__list-link" href="">Item</a></li>
+                    <li><a class="s-menu__list-link" href="">Item</a></li>
+                    <li><a class="s-menu__list-link" href="">Item</a></li>
+                    <li><a class="s-menu__list-link" href="">Item</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
